@@ -6,3 +6,6 @@
 
 ## 1. 腐蚀和膨胀
 
+简单来理解，腐蚀
+
+参考：https://blog.csdn.net/junpengxue/article/details/79958651
