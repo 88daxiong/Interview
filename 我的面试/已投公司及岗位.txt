@@ -6,3 +6,4 @@
 Inter：Deep learning software engineer
 Shopee(深圳虾皮信息科技)：后段开发工程师
 华为：算法工程师 + 人工智能工程师
+360: 算法工程师
