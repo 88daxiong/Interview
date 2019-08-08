@@ -12,6 +12,13 @@
 
 给一个500G的文本，里面全是URL，给2G的内存，无限硬盘，如何快速找到Top 100的URL？
 
+参考1: http://blog.sina.com.cn/s/blog_a0db4ee90102vrzk.html
+
+参考2: https://blog.csdn.net/tiankong_/article/details/77239501
+
+参考3: https://blog.csdn.net/kingyuan666/article/details/84584017
+
+参考4: https://blog.csdn.net/kingyuan666/article/details/84501930
 
 
 ## 0x3 进程和线程的区别
