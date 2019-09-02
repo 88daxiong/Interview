@@ -3,7 +3,7 @@
 @Author: daxiong
 @Date: 2019-08-19 15:59:14
 @LastEditors: daxiong
-@LastEditTime: 2019-08-19 16:02:10
+@LastEditTime: 2019-09-01 22:29:24
 '''
 def change(A, B):
     sumA = sum(A)
