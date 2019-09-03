@@ -1,9 +1,9 @@
 '''
-@Descripttion: 
+@Descripttion: 性感素数
 @Author: daxiong
 @Date: 2019-09-02 15:05:30
 @LastEditors: daxiong
-@LastEditTime: 2019-09-02 15:36:09
+@LastEditTime: 2019-09-03 15:34:25
 '''
 import math
 
