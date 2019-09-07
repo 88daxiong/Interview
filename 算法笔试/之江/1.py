@@ -3,7 +3,7 @@
 @Author: daxiong
 @Date: 2019-09-02 15:05:30
 @LastEditors: daxiong
-@LastEditTime: 2019-09-03 15:34:25
+@LastEditTime: 2019-09-06 16:45:03
 '''
 import math
 
@@ -39,4 +39,3 @@ else:
                 tag = True
         s += 1
     print(s - 1)
-        

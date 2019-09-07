@@ -3,18 +3,18 @@
 @Author: daxiong
 @Date: 2019-08-31 15:01:27
 @LastEditors: daxiong
-@LastEditTime: 2019-09-01 20:47:33
+@LastEditTime: 2019-09-06 15:22:03
 '''
-def getValue(n):
-    if n <= 1:
-        return 1
-    else:
-        return n*getValue(n-1)
+N = int(input().strip())
 
-def getC(n, m):
-    first = getValue(n)
-    second = getValue(m)
-    third = getValue(n - m)
-    return int(first/(second*third))
+resNum = list()
+for i in range(N):
+    s = input().strip().split()
+    name = s[0]
+    studyId = s[1]
+    grade = int(s[2])
+    resNum.append((grade, name, studyId))
 
-print(getC(5,0))
+resNum.sort()
+print("{0} {1}".format(resNum[-1][1], resNum[-1][2]))
+print("{0} {1}".format(resNum[0][1], resNum[0][2]))

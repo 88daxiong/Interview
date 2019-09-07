@@ -3,14 +3,14 @@
 @Author: daxiong
 @Date: 2019-08-27 20:37:40
 @LastEditors: daxiong
-@LastEditTime: 2019-08-27 21:09:26
+@LastEditTime: 2019-09-06 14:28:54
 '''
-# T = input().strip().split(' ')
-# n, m, d = int(T[0]), int(T[1]), int(T[2])
-# T = input().strip()
-# limited = [int(x) for x in T.split(' ')]
-# T = input().strip()
-# temp = [int(x) for x in T.split(' ')]
+T = input().strip().split(' ')
+n, m, d = int(T[0]), int(T[1]), int(T[2])
+T = input().strip()
+limited = [int(x) for x in T.split(' ')]
+T = input().strip()
+temp = [int(x) for x in T.split(' ')]
 n, m, d = 6, 2, 3
 limited = [1, 2]
 temp = [3, 4, 5, 6, 1]
@@ -33,9 +33,6 @@ if m >= 2:
         print(0)
     else:
         print(min(2*d - dis + 1, n))
-
-    
-
 # 6 2 3
 # 2 1
 # 3 4 5 6 1
