@@ -1,26 +1,34 @@
 '''
-@Descripttion: 移动平均数
+@Descripttion: 
 @Author: daxiong
 @Date: 2019-09-03 15:55:51
 @LastEditors: daxiong
-@LastEditTime: 2019-09-03 17:09:19
+@LastEditTime: 2019-09-25 20:33:40
 '''
-arr = input().strip().split()
-arr = [int(i) for i in arr]
-k = int(input().strip())
+s = input().strip().split()
+s = [int(i) for i in s]
 
-if k == 0:
-    print(0)
-else:
-    resNum = list()
-    curStr = arr[:k]
-    resNum.append(float(sum(curStr))/k)
-    begin = arr[0]
-    for i in range(k, len(arr)):
-        resNum.append(float(resNum[-1]*k - begin + arr[i])/k)
-        begin = arr[i - k + 1]
+newArr = list() # 以类似插入排序的方式
+newArr.append(s[0])
 
-    print('%.2f'%resNum[0],  end=' ')
-    for i in range(1, len(resNum) - 1):
-        print('%.2f'%resNum[i], end=' ')
-    print('%.2f'%resNum[-1], end = ' ')
+resNum = 0 # 能力值
+maxNum = 0 # 最大的值
+priorNum = s[0] # 前面一个数
+sameNum = 0 # 相同的值
+littleNum = 0 # 小于当前数的个数
+biggerNum = 0 # 大于当前数的个数
+lenList = 1 # 当前数组的总长
+curIndex = 0
+
+for num in s[1:]:
+    if num == priorNum:
+        resNum = resNum + littleNum - biggerNum
+    elif num < priorNum:
+        while curIndex >= 0 and newArr[curIndex] > num:
+            curIndex -= 1
+    else:
+        
+    priorNum = num
+    lenList += 1
+    if resNum > maxNum:
+        maxNum = resNum
